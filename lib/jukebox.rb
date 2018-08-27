@@ -42,7 +42,7 @@ end
 
 def run 
   help
-  input = " " 
+  input = nil
   
   until input == "exit"
   puts "Please enter a command: "

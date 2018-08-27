@@ -42,13 +42,17 @@ end
 
 def run 
   help
+  until input == "exit"
   puts "Please enter a command: "
   input = gets.chomp
-  while input != "exit"
+  if input == "list"
   list(songs) if input == "list"
-  play(input) if input == "play"
+  play(songs) if input == "play"
   help if input == "help"
+  else 
+    "Invalid input, please try again"
   end
+end
   exit_jukebox
 end
 

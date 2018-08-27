@@ -27,11 +27,12 @@ end
 def play(songs) 
   puts "Please enter a song name or number: "
   choice = gets.chomp
-  songs.select 
-    if choice == 
+  songs.select do |song|
+    if song == choice
+      puts "Playing #{song}"
     else
        puts "Invalid input, please try again"
-end
+    end
 end 
 end
 

@@ -48,8 +48,7 @@ def run
   list(songs) if input == "list"
   play(input) if input == "play"
   help if input == "help"
-  end 
-end
+  end
   exit_jukebox
 end
 

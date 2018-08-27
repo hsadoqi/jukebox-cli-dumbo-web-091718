@@ -42,6 +42,7 @@ end
 
 def run(songs)
   help
+  input = nil
   
   until input == "exit"
   puts "Please enter a command: "

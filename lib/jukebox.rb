@@ -45,12 +45,9 @@ def run
   until input == "exit"
   puts "Please enter a command: "
   input = gets.chomp
-  if input == "list"
-    list(songs)
-    elsif input == "play"
-    play(input)
-    elsif input == "help"
-    help
+  list(songs) if input == "list"
+  play(input) if input == "play"
+  help if input == "help"
   else 
     "Invalid input, please try again"
   end

@@ -50,7 +50,8 @@ def run
   help if input == "help"
   else 
     "Invalid input, please try again"
-  end
+  end 
+end
 end
   exit_jukebox
 end

@@ -24,6 +24,23 @@ def list (songs)
   }
 end
 
+def play(songs) 
+  puts "Please enter a song name or number: "
+  choice = gets.chomp
+  songs.select 
+    if choice == 
+    else
+       puts "Invalid input, please try again"
+end
+end 
+end
+
+def exit_jukebox
+end
+
+def run 
+end
+
 
 
 

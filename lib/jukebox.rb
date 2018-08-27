@@ -42,9 +42,9 @@ end
 
 def run 
   help
-  until input == "exit"
   puts "Please enter a command: "
   input = gets.chomp
+  while input != "exit"
   list(songs) if input == "list"
   play(input) if input == "play"
   help if input == "help"

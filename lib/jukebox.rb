@@ -42,6 +42,7 @@ end
 
 def run 
   help
+  until input == "exit"
   puts "Please enter a command: "
   input = gets.chomp
   if input == "list"
@@ -50,7 +51,8 @@ def run
     play(input)
     elsif input == "help"
     help
-  elsif 
+  else 
+    "Invalid input, please try again"
   end
 end
 
